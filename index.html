@@ -1,21 +1,98 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
+    <title>Matteprov</title>
     <link rel="stylesheet" href="bulma.min.css">
-  </head>
-  <body>
-  <section class="section">
-    <div class="container">
-      <h1 class="title">
-        Matteprov
-      </h1>
-      <p class="subtitle">
-       Är bulma enablat
-      </p>
-    </div>
-  </section>
-  </body>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <style>
+        @media(max-width: 500px) {
+          .reverse-columns {
+            flex-direction: column-reverse;
+            display: flex;
+          }
+        }
+    
+        .titled {
+          font-family: 'Merriweather', serif !important;
+          font-size: 58px !important;
+          font-weight: 400 !important;
+          line-height: 64px !important;
+        }
+    
+        .subtitled {
+          font-family: 'Merriweather', serif !important;
+          font-size: 22px !important;
+          font-weight: 400 !important;
+          line-height: 36px !important;
+        }
+      </style>
+</head>
+
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="https://www.matteprov.se">
+                <p class="">MATTEPROV</p>
+            </a>
+        </div>
+
+        <div class="navbar-menu">
+
+            <div class="navbar-end">
+                <a class="navbar-item">
+                    GENERERA MATTEPROV
+                </a>
+            </div>
+        </div>
+    </nav>
+    <section class="hero is-white is-fullheight">
+        <div class="hero-body">
+          <div class="container">
+            <div class="columns  is-vcentered reverse-columns">
+              <div class="column
+              is-10-mobile 
+              is-10-tablet 
+              is-5-desktop 
+              is-5-widescreen 
+              is-5-fullhd ">
+                <h1 class="title titled is-1 mb-6">
+                  Matteprov
+                </h1>
+                <div class="buttons">
+                    <a class="button" href="multiplikation.html">
+                        <p class="">Generera matteprov</p>
+                    </a>
+
+                </div>
+              </div>
+              <div data-aos="fade-right" class="column
+              is-10-mobile 
+              is-10-tablet 
+              is-4-desktop 
+              is-7-widescreen 
+              is-4-fullhd is-offset-1-fullhd">
+                <figure class="image is-square">
+                  <img src="images/math.jpg">
+                </figure>
+              </div>
+    
+            </div>
+          </div>
+        </div>
+        <div class="container has-text-centered">
+            <p>
+                Sätt fart på ditt barns matematikframgång! Vår enkla och användarvänliga hemsida gör det möjligt att skapa skräddarsydda multiplikationsprov som är perfekta för att stärka dina barns matematikfärdigheter. Med vår hjälp kan du anpassa övningarna efter ditt barns behov och mål. 
+            </p>
+        </div>
+      </section>
+      <section>
+        
+      </section>
+</body>
+
 </html>

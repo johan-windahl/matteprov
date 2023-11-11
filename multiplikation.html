@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="bulma.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="https://www.matteprov.se">
+                <p class="">MATTEPROV</p>
+            </a>
+        </div>
+
+        <div class="navbar-menu">
+
+            <div class="navbar-end">
+                <a class="navbar-item">
+                    GENERERA MATTEPROV
+                </a>
+            </div>
+        </div>
+    </nav>
+    <section class="section">
+        <div class="container">
+            <div class="columns  is-vcentered reverse-columns">
+                <div class="column
+              is-10-mobile 
+              is-10-tablet 
+              is-5-desktop 
+              is-5-widescreen 
+              is-5-fullhd ">
+                    <h1 class="title">Matteprov Generator</h1>
+                    <form id="mathForm">
+                        <div class="field">
+                            <label for="startNumber" class="label">Starttabell</label>
+                            <div class="control">
+                                <input type="number" id="startNumber" class="input" min="1" max="10" value="1" required>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label for="endNumber" class="label">Sluttabell</label>
+                            <div class="control">
+                                <input type="number" id="endNumber" class="input" min="1" max="10" value="12" required>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label for="numQuestions" class="label">Antal uppgifter:</label>
+                            <div class="control">
+                                <input type="number" id="numQuestions" class="input" min="1" value="30" required>
+                            </div>
+                        </div>
+
+                        <div class="field is-grouped">
+                            <div class="control">
+                                <button type="button" onclick="generateUniqueMathTest()"
+                                    class="button is-success">Generera
+                                    Prov</button>
+                            </div>
+                            <div class="control">
+                                <button type="button" onclick="printResults()" class="button is-info">Skriv ut
+                                    Resultat</button>
+                            </div>
+                        </div>
+                </div>
+                </form>
+
+                <div id="results" class="columns is-multiline"></div>
+            </div>
+    </section>
+
+    <script>
+        function printResults() {
+            var printContainer = document.getElementById("results").cloneNode(true);
+            printContainer.id = ""; // Remove the ID to avoid conflicts with the original results container
+
+            var printWindow = window.open('Test', '_blank');
+            printWindow.document.write('<html><head><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"><style> \
+            @media print { \
+            @page { \
+                margin: 0.5cm; \
+            }    \
+            body::before { \
+            content: normal !important; \
+            } \
+            body { \
+                margin: 0.5cm; \
+            } \
+            }</style></head><body>');
+            printWindow.document.write('<h1 class="title has-text-centered">Matte Prov - Lycka till!</h1>');
+            printWindow.document.write(printContainer.outerHTML);
+            printWindow.document.write('</body></html>');
+            printWindow.document.close();
+            setTimeout(function () {
+                printWindow.print();
+            }, 200); // Vänta 1 sekund innan utskrift
+        }
+
+        function generateUniqueMathTest() {
+            var startNumber = parseInt(document.getElementById("startNumber").value);
+            var endNumber = parseInt(document.getElementById("endNumber").value);
+            var numQuestions = parseInt(document.getElementById("numQuestions").value);
+
+            var resultsContainer = document.getElementById("results");
+            resultsContainer.innerHTML = "";
+
+            // Skapa en array med alla möjliga kombinationer av num1 och num2
+            var combinations = [];
+            for (var i = startNumber; i <= endNumber; i++) {
+                for (var j = 1; j <= 10; j++) {
+                    combinations.push({ num1: i, num2: j });
+                }
+            }
+
+            // Blanda arrayen för att få en slumpmässig ordning
+            shuffleArray(combinations);
+
+            // Välj de första numQuestions kombinationerna
+            for (var k = 0; k < numQuestions; k++) {
+                var question = combinations[k].num1 + " * " + combinations[k].num2 + " = ";
+                resultsContainer.innerHTML += `
+            <div class="column is-one-third">
+                <div class="notification">${question}</div>
+            </div>
+        `;
+            }
+        }
+
+        function shuffleArray(array) {
+            for (var i = array.length - 1; i > 0; i--) {
+                var j = Math.floor(Math.random() * (i + 1));
+                var temp = array[i];
+                array[i] = array[j];
+                array[j] = temp;
+            }
+        }
+    </script>
+</body>
+
+</html>
