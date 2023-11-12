@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="bulma.min.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -46,13 +47,12 @@
         <div class="container">
             <div class="columns reverse-columns">
                 <div class="column
-              is-5-mobile 
+              is-12-mobile 
               is-5-tablet 
               is-5-desktop 
-              is-5-widescreen 
-              is-5-fullhd ">
+              ">
                     <h1 class="title">Multiplikations Generator</h1>
-                    <form id="mathForm">
+                    <form id="mathForm" class="column is-4-desktop is-6-mobile">
                         <div class="field">
                             <label for="startNumber" class="label">Starttabell</label>
                             <div class="control">
@@ -75,7 +75,7 @@
                         </div>
 
                         <div class="field is-grouped">
-                            <div class="control">
+                            <div class="control ">
                                 <button type="button" onclick="generateUniqueMathTest()"
                                     class="button is-success">Skapa Prov</button>
                             </div>
