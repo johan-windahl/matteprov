@@ -90,15 +90,42 @@
 
                         <div class="field is-grouped">
                             <div class="control ">
-                                <button type="button" onclick="generateUniqueSubtractionTest()" class="button is-success">Skapa
+                                <button type="button" onclick="generateUniqueSubtractionTest()" class="button">Skapa
                                     Prov</button>
                             </div>
                             <div class="control">
-                                <button type="button" onclick="printResults()" id="printButton" class="button is-info" disabled="true">Skriv ut</button>
+                                <button type="button" onclick="printResults()" id="printButton" class="button" disabled="true">Skriv ut</button>
                             </div>
                         </div>
+                    </form>
                 </div>
-                </form>
+                <div class="column
+              is-12-mobile 
+              is-5-tablet 
+              is-5-desktop 
+              ">
+                    <div class="content">
+                        <p>
+                            Denna enkla och intuitiva generator hjälper dig att skapa anpassade subtraktionsprov för
+                            övning eller klassrumsanvändning. Följ stegen nedan för att skapa ditt prov:
+                        </p>
+                        <ul>
+                            <li><strong>Starttabell:</strong> Välj vilken subtraktionstabell du vill börja med. Detta
+                                är det minsta tal som kommer att användas i dina subtraktionsfrågor.</li>
+                            <li><strong>Sluttabell:</strong> Ange vilken tabell du vill avsluta med. Detta är det högsta
+                                tal som kommer att användas i dina subtraktionsfrågor.</li>
+                            <li><strong>Antal uppgifter:</strong> Bestäm hur många subtraktionsfrågor du vill
+                                inkludera i ditt prov. Du kan välja så få eller så många du behöver.</li>
+                            <li><strong>Inkludera facit:</strong> Om du vill att svaren ska inkluderas i ditt prov,
+                                kryssa i denna ruta. Facit kommer att förberedas och kan skrivas ut tillsammans med
+                                provfrågorna.</li>
+                        </ul>
+                        <p>
+                            När du har ställt in dina önskemål, klicka på Skapa Prov för att generera ditt anpassade
+                            subtraktionsprov. När provet är klart kan du skriva ut det direkt genom att klicka på
+                            <strong>Skriv ut</strong>.
+                        </p>
+                    </div>
             </div>
             <div id="results" class="columns is-multiline"></div>
             <div id="answerKeyElement" class="columns is-multiline is-hidden"></div>
