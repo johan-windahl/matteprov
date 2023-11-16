@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Matteprov är en tjänst för att enkelt skapa och skriva ut anpassade matteprov, stenciler och arbetsblad.">
+    <meta name="description"
+        content="Matteprov är en tjänst för att enkelt skapa och skriva ut anpassade matteprov, stenciler och arbetsblad.">
     <title>Divisionsprov</title>
     <link rel="stylesheet" href="bulma.min.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
@@ -106,7 +108,7 @@
               is-5-tablet 
               is-5-desktop 
               ">
-                    <div class="content">
+                    <div id="instruction" class="content">
                         <p>
                             Denna enkla och intuitiva generator hjälper dig att skapa anpassade divisionsprov för
                             övning eller klassrumsanvändning. Följ stegen nedan för att skapa ditt prov:
@@ -128,15 +130,13 @@
                             <strong>Skriv ut</strong>.
                         </p>
                     </div>
+                </div>
             </div>
-            </div>
-            <div id="results" class="columns is-multiline"></div>
-            <div id="answerKeyElement" class="columns is-multiline is-hidden"></div>
     </section>
-
-    <script>
-
-    </script>
+    <section class="mx-6">
+        <div id="results" class="columns is-multiline"></div>
+        <div id="answerKeyElement" class="columns is-multiline is-hidden"></div>
+    </section>
 </body>
 
 </html>

@@ -70,6 +70,9 @@ function generateUniqueMultiplicationTest() {
     var numQuestions = parseInt(document.getElementById("numQuestions").value);
     var includeAnswerKey = document.getElementById("includeAnswerKey").checked;
     document.getElementById("printButton").disabled = false;
+    if (window.innerWidth <= 768) {
+        document.getElementById("instruction").hidden = true;
+    }
     var answerKeyContent = ""
 
     var resultsContainer = document.getElementById("results");
@@ -112,6 +115,9 @@ function generateUniqueAdditionTest() {
     var numQuestions = parseInt(document.getElementById("numQuestions").value);
     var includeAnswerKey = document.getElementById("includeAnswerKey").checked;
     document.getElementById("printButton").disabled = false;
+    if (window.innerWidth <= 768) {
+        document.getElementById("instruction").hidden = true;
+    }
     var answerKeyContent = ""
 
     var resultsContainer = document.getElementById("results");
@@ -154,6 +160,9 @@ function generateUniqueSubtractionTest() {
     var numQuestions = parseInt(document.getElementById("numQuestions").value);
     var includeAnswerKey = document.getElementById("includeAnswerKey").checked;
     document.getElementById("printButton").disabled = false;
+    if (window.innerWidth <= 768) {
+        document.getElementById("instruction").hidden = true;
+    }
     var answerKeyContent = "";
 
     var resultsContainer = document.getElementById("results");
@@ -198,6 +207,9 @@ function generateUniqueDivisionTest() {
     var numQuestions = parseInt(document.getElementById("numQuestions").value);
     var includeAnswerKey = document.getElementById("includeAnswerKey").checked;
     document.getElementById("printButton").disabled = false;
+    if (window.innerWidth <= 768) {
+        document.getElementById("instruction").hidden = true;
+    }
     var answerKeyContent = "";
 
     var resultsContainer = document.getElementById("results");
