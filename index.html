@@ -1,105 +1,159 @@
 <!DOCTYPE html>
 <html lang="sv">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Matteprov är en tjänst för att enkelt skapa och skriva ut anpassade matteprov, stenciler och arbetsblad.">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Matteprov är en tjänst för att enkelt skapa och skriva ut anpassade matteprov, stenciler och arbetsblad."
+    />
     <title>Matteprov</title>
-    <link rel="stylesheet" href="bulma.min.css">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bulma.min.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        @media(max-width: 768px) {
-            .reverse-columns {
-                flex-direction: column-reverse;
-                display: flex;
-            }
-
-            .title {
-                order: -1;
-            }
+      @media (max-width: 768px) {
+        .reverse-columns {
+          flex-direction: column-reverse;
+          display: flex;
         }
 
-        .titled {
-            font-family: 'Merriweather', serif !important;
-            font-size: 58px !important;
-            font-weight: 400 !important;
-            line-height: 64px !important;
+        .title {
+          order: -1;
         }
+      }
 
-        .subtitled {
-            font-family: 'Merriweather', serif !important;
-            font-size: 22px !important;
-            font-weight: 400 !important;
-            line-height: 36px !important;
-        }
+      .titled {
+        font-family: "Merriweather", serif !important;
+        font-size: 58px !important;
+        font-weight: 400 !important;
+        line-height: 64px !important;
+      }
+
+      .subtitled {
+        font-family: "Merriweather", serif !important;
+        font-size: 22px !important;
+        font-weight: 400 !important;
+        line-height: 36px !important;
+      }
     </style>
-</head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SD9XNPC09N"></script>
-<script>
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-SD9XNPC09N"
+  ></script>
+  <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-    gtag('config', 'G-SD9XNPC09N');
-</script>
+    gtag("config", "G-SD9XNPC09N");
+  </script>
 
-<body>
+  <body>
     <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <a class="navbar-item" href="https://www.matteprov.se">
-                <p class="">MATTEPROV</p>
-            </a>
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://www.matteprov.se">
+          <p class="">MATTEPROV</p>
+        </a>
+        <span class="navbar-burger burger" data-target="navbarMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </div>
+      <div id="navbarMenu" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item" href="addition.html"> ADDITION </a>
+          <a class="navbar-item" href="subtraktion.html"> SUBTRAKTION </a>
+          <a class="navbar-item" href="multiplikation.html"> MULTIPLIKATION </a>
+          <a class="navbar-item" href="division.html"> DIVISION </a>
         </div>
-
-        <div class="navbar-menu">
-
-            <div class="navbar-end">
-                <a class="navbar-item" href="generera.html">
-                    GENERERA MATTEPROV
-                </a>
-            </div>
-        </div>
+      </div>
     </nav>
     <section class="hero is-white is-fullheight">
-        <div class="hero-body">
-            <div class="container">
-                <div class="columns  is-vcentered reverse-columns">
-                    <div class="column
-              is-12-mobile 
-              is-5-desktop">
-                        <h1 class="title titled is-1 mb-6">
-                            Matteprov
-                        </h1>
-                        <div class="buttons">
-                            <a class="button" href="generera.html">
-                                <p class="">Generera matteprov</p>
-                            </a>
-
-                        </div>
-                    </div>
-                    <div data-aos="fade-right" class="column
-              is-12-mobile 
-              is-5-desktop">
-                        <figure class="image is-square">
-                            <img src="images/math.jpg">
-                        </figure>
-                    </div>
-
-                </div>
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns is-vcentered reverse-columns">
+            <div class="column is-12-mobile is-5-desktop">
+              <h1 class="title titled is-1 mb-6">Matteprov</h1>
+              <div class="buttons">
+                <a class="button" href="generera.html">
+                  <p class="">Generera matteprov</p>
+                </a>
+              </div>
             </div>
+            <div data-aos="fade-right" class="column is-12-mobile is-5-desktop">
+              <figure class="image is-square">
+                <img src="images/math.jpg" />
+              </figure>
+            </div>
+          </div>
         </div>
-        <div class="container has-text-centered">
-            <h2 class="subtitle">Skapa enkelt matteprov och stenciler till ditt barn!</h2>
-            <p>
-                Vår enkla och användarvänliga hemsida gör det möjligt att skapa skräddarsydda prov och stenciler som du enkelt kan skriva ut och är
-                perfekta för att stärka dina barns matematikfärdigheter inom de fyra räknesätten. Med vår hjälp kan du anpassa övningarna efter
-                ditt barns behov och mål.
-            </p>
-        </div>
+      </div>
+      <div class="container has-text-centered">
+        <h2 class="subtitle">
+          Skapa enkelt matteprov och stenciler till ditt barn!
+        </h2>
+        <p>
+          Vår enkla och användarvänliga hemsida gör det möjligt att skapa
+          skräddarsydda prov, arbetsblad och stenciler som du enkelt kan skriva
+          ut och är perfekta för att stärka dina barns matematikfärdigheter inom
+          de fyra räknesätten. Med vår hjälp kan du anpassa övningarna efter
+          ditt barns behov och mål.
+        </p>
+        <h2>
+          Betydelsen av att bemästra de fyra räknesätten för barns
+          matematikförmåga
+        </h2>
+        <p>
+          Att bemästra de fyra räknesätten - addition, subtraktion,
+          multiplikation och division - är avgörande för ett barns akademiska
+          framgång och dagliga problemlösning. Dessa grundläggande matematiska
+          färdigheter lägger grunden för all framtida matematikinlärning och är
+          nyckeln till att förstå mer komplexa koncept och ekvationer. Föräldrar
+          och lärare spelar en vital roll i att stödja barn i denna kritiska
+          utvecklingsfas. Genom att erbjuda varierande och engagerande
+          arbetsblad, kan vi stimulera barns intresse för matematik och
+          uppmuntra en djupare förståelse av dessa viktiga räknesätt. En stark
+          grund i addition, subtraktion, multiplikation och division är inte
+          bara viktig för skolframgång, utan också för att utrusta barn med
+          färdigheter som är nödvändiga för att navigera i vardagens utmaningar.
+          Vår webbplats tillhandahåller anpassningsbara och utskrivbara
+          arbetsblad som är utformade för att hjälpa barn att bemästra dessa
+          grundläggande matematiska färdigheter på ett roligt och effektivt
+          sätt.
+        </p>
+        <h2>Fördelar med fysiska och anpassninsbara arbetsblad</h2>
+        <p>
+          Forskning visar att fysiska och anpassningsbara arbetsblad kan
+          förbättra inlärningen genom att tillgodose individuella
+          inlärningsstilar och behov. Dessa arbetsblad erbjuder variation och
+          flexibilitet, vilket gör det möjligt för elever att fokusera på
+          specifika områden där de behöver mer övning. Genom att tillhandahålla
+          arbetsblad för de fyra räknesätten, kan vår webbplats hjälpa elever
+          att utveckla en mer heltäckande förståelse av matematik.
+        </p>
+        <h2>Dela och sprid kunskap</h2>
+        <p>
+          Vi tror på kraften av att dela kunskap. Genom att dela vår webbplats
+          med andra lärare, föräldrar och elever, kan du hjälpa till att sprida
+          viktiga resurser inom matematikutbildning. Varje delning bidrar till
+          att förbättra tillgången till kvalitetsmaterial och stödja elevers
+          inlärning.
+        </p>
+      </div>
     </section>
-</body>
-
+  </body>
 </html>
