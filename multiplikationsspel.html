@@ -100,8 +100,8 @@
           tile.classList.add("tile");
           let num1 = Math.floor(Math.random() * 12) + 1;
           let num2 = Math.floor(Math.random() * 12) + 1;
-          tile.textContent = `${num1} - ${num2}`;
-          tile.dataset.answer = num1 - num2;
+          tile.textContent = `${num1} * ${num2}`;
+          tile.dataset.answer = num1 * num2;
           gameContainer.appendChild(tile);
 
           let position = 0;

@@ -103,8 +103,8 @@
           while (num1 < num2) {
             num2 = Math.floor(Math.random() * 10) + 1;
           }
-          tile.textContent = `${num1} - ${num2}`;
-          tile.dataset.answer = num1 - num2;
+          tile.textContent = `${num1} + ${num2}`;
+          tile.dataset.answer = num1 + num2;
           gameContainer.appendChild(tile);
 
           let position = 0;
@@ -240,7 +240,7 @@
       <div class="container has-text-centered">
         <h1 class="title">Mattespel - addition</h1>
         <img
-          src="https://www.matteprov.se/images/minus-solid.svg"
+          src="https://www.matteprov.se/images/plus-solid.svg"
           alt="mattespel matte spel additionsspel"
           width="100px"
           height="100px"
