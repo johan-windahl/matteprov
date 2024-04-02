@@ -134,15 +134,6 @@
               tile.remove();
               updateScore();
             }
-
-            /*tiles.forEach((tile) => {
-              console.log(tile.dataset.answer, answer);
-              if (correctAnswer === answer) {
-                clearInterval(tile.dataset.intervalId);
-                tile.remove();
-                updateScore();
-              }
-            });*/
             answerInput.value = "";
             answerInput.focus();
           }
@@ -253,7 +244,7 @@
         <div id="gameContainer" class="box"></div>
         <input
           class="input is-large mt-4"
-          type="text"
+          type="number"
           id="answerInput"
           placeholder="Ange ditt svar"
           autofocus
