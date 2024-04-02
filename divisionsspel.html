@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Mattespel för att öva upp din snabbhet i multiplikation."
+      content="Mattespel för att öva upp din snabbhet i division."
     />
-    <title>Mattespel multiplikation</title>
+    <title>Mattespel division</title>
     <link rel="stylesheet" href="bulma.min.css" />
     <link
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -98,8 +98,9 @@
         function createTile() {
           const tile = document.createElement("div");
           tile.classList.add("tile");
-          let num1 = Math.floor(Math.random() * 12) + 1;
-          let num2 = Math.floor(Math.random() * 12) + 1;
+          let num2 = Math.floor(Math.random() * 10) + 1;
+          let multiplier = Math.floor(Math.random() * 10) + 1;
+          let num1 = num2 * multiplier;
           tile.textContent = `${num1} / ${num2}`;
           tile.dataset.answer = num1 / num2;
           gameContainer.appendChild(tile);
@@ -226,30 +227,21 @@
     </nav>
     <section class="section">
       <div class="container has-text-centered">
-        <h1 class="title">Mattespel - multiplikation</h1>
+        <h1 class="title">Mattespel - division</h1>
         <img
           src="https://www.matteprov.se/images/divide-solid.svg"
-          alt="mattespel matte spel multiplikationsspel"
+          alt="mattespel matte spel divisionsspel"
           width="100px"
           height="100px"
         />
         <p class="mt-4">
-          Perfekt mattespel för att öva upp din snabbhet i multiplikation.
+          Perfekt mattespel för att öva upp din snabbhet i division.
         </p>
         <p class="mb-4">
           Desto högre nivå du väljer, desto kortare tid har du på dig för att
           svara rätt i mattespelet
         </p>
         <p class="subtitle">Lycka till!</p>
-        <div id="gameContainer" class="box"></div>
-        <input
-          class="input is-large mt-4"
-          type="number"
-          id="answerInput"
-          placeholder="Ange ditt svar"
-          autofocus
-        />
-        <p class="mt-2">Score: <span id="score">0</span></p>
         <div class="buttons is-flex is-justify-content-center pt-4">
           <button
             class="button is-primary mr-2"
@@ -292,6 +284,15 @@
             Nivå 5
           </button>
         </div>
+        <div id="gameContainer" class="box"></div>
+        <input
+          class="input is-large mt-4"
+          type="number"
+          id="answerInput"
+          placeholder="Ange ditt svar"
+          autofocus
+        />
+        <p class="mt-2">Poäng: <span id="score">0</span></p>
       </div>
     </section>
   </body>
