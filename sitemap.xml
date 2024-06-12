@@ -1,42 +1,59 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<script/>
+<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
 <url>
-  <loc>https://www.matteprov.se/</loc>
-  <lastmod>2023-11-12T15:52:00+00:00</lastmod>
-  <priority>1.00</priority>
+<loc>https://www.matteprov.se/</loc>
+<lastmod>2024-04-02T17:58:04+00:00</lastmod>
+<priority>1.00</priority>
 </url>
 <url>
-  <loc>https://www.matteprov.se/generera.html</loc>
-  <lastmod>2023-11-12T15:52:00+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.matteprov.se/addition.html</loc>
+<lastmod>2024-04-02T17:58:04+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.matteprov.se/addition.html</loc>
-  <lastmod>2023-11-12T15:52:00+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://www.matteprov.se/subtraktion.html</loc>
+<lastmod>2024-04-02T17:58:04+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.matteprov.se/subtraktion.html</loc>
-  <lastmod>2023-11-12T15:52:00+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://www.matteprov.se/multiplikation.html</loc>
+<lastmod>2024-04-02T17:58:04+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.matteprov.se/multiplikation.html</loc>
-  <lastmod>2023-11-12T15:52:00+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://www.matteprov.se/division.html</loc>
+<lastmod>2024-04-02T17:58:04+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.matteprov.se/division.html</loc>
-  <lastmod>2023-11-12T15:52:00+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://www.matteprov.se/mattespel.html</loc>
+<lastmod>2024-04-02T17:58:04+00:00</lastmod>
+<priority>0.80</priority>
 </url>
-
-
+<url>
+<loc>https://www.matteprov.se/generera.html</loc>
+<lastmod>2024-04-02T17:58:04+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://www.matteprov.se/multiplikationsspel.html</loc>
+<lastmod>2024-04-02T17:58:04+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://www.matteprov.se/divisionsspel.html</loc>
+<lastmod>2024-04-02T17:58:04+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://www.matteprov.se/additionsspel.html</loc>
+<lastmod>2024-04-02T17:58:04+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://www.matteprov.se/subtraktionsspel.html</loc>
+<lastmod>2024-04-02T17:58:04+00:00</lastmod>
+<priority>0.64</priority>
+</url>
 </urlset>
